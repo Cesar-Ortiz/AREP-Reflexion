@@ -22,7 +22,6 @@ var index = (function (){
     }
 
     function changeImage(data){
-        console.log(data);
         document.getElementById("img").src=data;
     }
 

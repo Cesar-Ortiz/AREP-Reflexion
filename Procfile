@@ -1,0 +1,1 @@
+web: java -cp target/classes edu.escuelaing.arep.reflection.webapp.AppStarter edu.escuelaing.arep.reflection.webapp.Controller

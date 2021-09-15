@@ -23,15 +23,15 @@ public class HttpServer {
     }
     private HttpServer(){}
 
-    public void start(String[] args) throws IOException, URISyntaxException {
+    public void start(String[] args, int port) throws IOException, URISyntaxException {
         ServerSocket serverSocket = null;
         try {
-            serverSocket = new ServerSocket(35000);
+            serverSocket = new ServerSocket(port);
         } catch (IOException e) {
             System.err.println("Could not listen on port: 35000.");
             System.exit(1);
         }
-        loadServices();
+        loadServices(args[0]);
         boolean running = true;
         while(running){
             Socket clientSocket = null;
@@ -47,10 +47,10 @@ public class HttpServer {
         serverSocket.close();
     }
 
-    private void loadServices(){
+    private void loadServices(String args){
         try{
-            String classPath="edu.escuelaing.arep.reflection.webapp.Controller";
-            //String classPath=args;
+            //String classPath="edu.escuelaing.arep.reflection.webapp.Controller";
+            String classPath=args;
             Class c = Class.forName(classPath);
 
             for(Method m : c.getDeclaredMethods()){
