@@ -11,8 +11,23 @@ public class Controller {
         return 2.0*2.0;
     }
 
-    @Service(uri="/leo")
-    public static String leo(){
+    @Service(uri="/leon")
+    public static String leon(){
         return "leon.jpg";
+    }
+
+    @Service(uri="/jaguar")
+    public static String jaguar(){
+        return "jaguar.jpg";
+    }
+
+    @Service(uri="/leopardo")
+    public static String leopardo(){
+        return "leopardo.jpeg";
+    }
+
+    @Service(uri="/tigre")
+    public static String tigre(){
+        return "tigre.jpg";
     }
 }

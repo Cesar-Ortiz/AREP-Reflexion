@@ -50,6 +50,7 @@ public class HttpServer {
     private void loadServices(){
         try{
             String classPath="edu.escuelaing.arep.reflection.webapp.Controller";
+            //String classPath=args;
             Class c = Class.forName(classPath);
 
             for(Method m : c.getDeclaredMethods()){
