@@ -3,8 +3,10 @@ Se realizo un servidor web que lee archivos e imagenes del disco entre los cuale
 
 ## Despliegues
 #### 🚀 Despliegue Imagen (jpg) [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://reflexionapi.herokuapp.com/leopardo.jpeg)
-#### 🚀 Despliegue Html con css y js [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://reflexionapi.herokuapp.com/index.html)
+#### 🚀 Despliegue Html con css y js con controlador [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://reflexionapi.herokuapp.com/index.html)
+#### 🚀 Despliegue Ejemplo notacion @cuadrado [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://reflexionapi.herokuapp.com/appuser/cuadrado)
 #### 🚀 Despliegue Base(html) [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://clientwebservices.herokuapp.com)
+
 
 ## Conclusión
 Podemos concluir que para la realización de un servidor web se apoya en un Framework realizado por nosotros mismos usando librerias de reflection de java y las anotaciones, de esta manera podemos hacer una aplicación web basica sin necesidad de un Framework de alto nivel como spark o spring.
